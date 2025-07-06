@@ -1,12 +1,52 @@
-//welcom to Rock Paper and Scissors  Game !!!
-console.log( "Welcom to play Rock Paper and Scissons ")
+console.log("Welcome to play Rock Paper and Scissors!"); //Willkommensnachricht im Terminal
 
-console.log("choose one of the liste : Rock , Paper , Scissors ! Enjoy your Game");
-let playerMove =  Process.argv.slice(2); //input player choice 
-let choice = [ 'Rock' , 'Paper' , 'Scissors']; 
-let computerMove  =  choice( math.floor(Math.random() * 3 ));
+let playerMove = process.argv[2];
 
-if ( choice.includes(playerMove));   // test if the player choose one of the right list to play the game 
-console.log("please choose one of this liste : [ Rock, Paper, Scissors");
-Process.exit();
+// Wenn der spieler nichts eigeben hat 
+if (!playerMove) {
+  console.log("Please choose Rock, Paper, or Scissors");
+  return;
+}
+
+console.log("Choose one of the list: Rock, Paper, Scissors! Enjoy your Game");
+
+const choice = ['Rock', 'Paper', 'Scissors'];
+
+// Funktion, die zufällig einen Spielzug für den Computer auswählt
+function randomChoice() {
+  const random = Math.floor(Math.random() * choice.length);
+  return choice[random];
+}
+
+const computerMove = randomChoice();
+
+//funktion wenn der Spieler etwas falsh angegebn hat 
+function result() {
+  if (!choice.includes(playerMove)) {
+    console.log("Invalid input. Please choose Rock, Paper, or Scissors.");
+    return;
+  }
+
+  console.log(`You chose ${playerMove}. Computer chose ${computerMove}`); // Zeigt die Auswahl beider Spieler an
+
+  //  mit if und else statment Vergleicht den Spielzug des Spielers mit dem des Computers und bestimmt, wer gewinnt
+  if (playerMove === computerMove) {
+    console.log("Draw! You can play again.");
+  } else if (
+    (computerMove === 'Scissors' && playerMove === 'Paper') ||
+    (computerMove === 'Paper' && playerMove === 'Rock') ||
+    (computerMove === 'Rock' && playerMove === 'Scissors')
+  ) {
+    console.log("You lose! Try again.");
+  } else {
+    console.log("You win!");
+  }
+}
+// Funktion wird aufgerufen, um das Ergebnis zu berechnen
+result();
+
+   
+  
+
+
 
