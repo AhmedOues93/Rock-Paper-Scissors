@@ -1,6 +1,7 @@
 console.log("Welcome to play Rock Paper and Scissors!"); //Willkommensnachricht im Terminal
 
-let playerMove = process.argv[2];
+// Nimmt den dritten Terminal-Parameter als Spielerwahl
+let playerMove = process.argv[2]; 
 
 // Wenn der spieler nichts eigeben hat 
 if (!playerMove) {
