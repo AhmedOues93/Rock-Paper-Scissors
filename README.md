@@ -48,4 +48,4 @@ Run the game using Node.js:
 #bash
 Kopieren
 Bearbeiten
-node rock-paper-scissors.js
+node Rps.js
