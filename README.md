@@ -1,39 +1,47 @@
-##Rock-Paper-Scissors 🪨📄✂️ – JavaScript CLI Game
-This project is a simple command-line Rock-Paper-Scissors game built in JavaScript.
-It was created as part of my Fullstack Web Development Bootcamp (June to November 2025, at WBS Coding School).
+# Rock-Paper-Scissors 🪨📄✂️ – JavaScript CLI Game
 
-##🎯 Project Goals
-Practice JavaScript basics: variables, functions, and loops
+This is a simple command-line Rock-Paper-Scissors game built with JavaScript, developed during my **Fullstack Web Development Bootcamp** (June–November 2025) at WBS Coding School.
 
-Handle user input via the terminal
+---
 
-Implement game logic and conditional statements
+## 🎯 Project Goals
 
-Run JavaScript in Node.js environment
+- Learn JavaScript basics: variables, functions, loops, conditionals  
+- Handle user input in the terminal  
+- Execute JavaScript with Node.js  
+- Structure a small CLI project  
+- Use Git and GitHub for version control
 
-Learn how to structure and document small projects
+---
 
-Use Git and GitHub for version control
+## 🛠️ Technologies Used
 
-##🛠️ Technologies Used
-JavaScript (Vanilla JS)
+- JavaScript (Vanilla JS)  
+- Node.js (Terminal environment)  
+- Git & GitHub
 
-Node.js (console/terminal)
+---
 
-Git & GitHub
+## 📁 Project Structure
 
-##📁 Project Structure
 Rock-Paper-Scissors/
 ├── rock-paper-scissors.js # Main game script
 └── README.md # Project documentation
 
-##🚀 How to Run the Project
-Clone the repository:
+
+---
+
+## 🚀 How To Run The Project
+
+1. Clone the repository:  
+```bash
+git clone https://github.com/AhmedOues93/Rock-Paper-Scissors.git
+
+Go to the project folder:
 
 #bash
 Kopieren
 Bearbeiten
-git clone https://github.com/AhmedOues93/Rock-Paper-Scissors.git
 cd Rock-Paper-Scissors
 Run the game using Node.js:
 
